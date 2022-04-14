@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tartan Testing and Vaccination</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script>
+  function setColor(id){
+    var all = document.getElementsByClassName("location-btn");
+    for(let i = 0; i < all.length; i++){
+      all[i].style.backgroundColor = "#2B4A32"
+      all[i].style.color = "#FFF"
+    }
+    var property = document.getElementById(id);
+    property.style.backgroundColor = "#35B151"
+    property.style.color = "#000"
+}
+</script>
+
+<body>
+  <nav>
+
+    <ul>
+            <!-- back to homepage -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Existing Appointments</a></li>
+            <li><a href="#">Past Results</a></li>
+    </ul>
+
+    <h1 class="left-notice">Welcome, Nick</h1>
+    <div class="progress">
+            <span class="dot-black"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+    </div>
+    </nav>
+
+    <div class="content">
+    <h2>Available Testing Sites</h2>
+    <div class="location-container">
+        <div class="label-group">
+            <div class="label">
+                <div class="label-color-available"></div>
+                <div class="label-text">Available</div>
+            </div>
+            <div class="label">
+                <div class="label-color-confirmed"></div>
+                <div class="label-text">Confirmed</div>
+            </div>
+        </div>
+        <div class="location-table">
+            <div class="location-col">
+                <h2>TCS Hall</h2>
+                <div class="location-btn" id="9:00 am" onclick="setColor(this.id)">9:00 am</div>
+                <div class="location-btn" id="9:15 am" onclick="setColor(this.id)">9:15 am</div>
+                <div class="location-btn" id="9:30 am" onclick="setColor(this.id)">9:30 am</div>
+            </div>
+            <div class="location-col">
+                <h2>East Garage</h2>
+                <div class="location-btn" id="3:00 pm" onclick="setColor(this.id)">3:00 pm</div>
+                <div class="location-btn" id="3:15 pm" onclick="setColor(this.id)">3:15 pm</div>
+                <div class="location-btn" id="3:30 pm" onclick="setColor(this.id)">3:30 pm</div>
+            </div>   
+        </div>
+
+    </div>
+    <div id="next"><a href="confirm.html" class="button">Next <span>&#8594;</span></a></div>
+
+    </div>
+   
+</body>
+
+</html>

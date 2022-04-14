@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tartan Testing and Vaccination</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<script>
+  function setColor(id){
+    var all = document.getElementsByClassName("location-btn");
+    for(let i = 0; i < all.length; i++){
+      all[i].style.backgroundColor = "#2B4A32"
+      all[i].style.color = "#FFF"
+    }
+    var property = document.getElementById(id);
+    property.style.backgroundColor = "#35B151"
+    property.style.color = "#000"
+}
+</script>
+
+<body>
+  <nav>
+
+    <ul>
+            <!-- back to homepage -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="existingAppointments.html">Existing Appointments</a></li>
+            <li><a href="#">Past Results</a></li>
+    </ul>
+
+    <h1 class="left-notice">Welcome, Nick</h1>
+    <div class="progress">
+            <span class="dot-black"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+    </div>
+    </nav>
+
+    <div class="content">
+    <h2 class="confirmed-header">Confirmed!</h2>
+    <div class="last-container location-container">
+        
+        <h4 id="appinfotext"> Nick, you are due on Feb </h4>
+        <div class="last-box">
+            <img src="./websiteQRCode_noFrame 1.png"/>
+            <h3>Take a screenshot of your QR code and show it to the staff</h3>
+        </div>
+    </div>
+    <script src="last.js">
+    </script>
+
+
+
+    <div class="last-btn" id="consent"><a href="existingAppointments.html" class="button">View Appointment Details</a>
+    </div>
+
+    </div>
+   
+</body>
+
+</html>

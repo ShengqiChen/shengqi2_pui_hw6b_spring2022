@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tartan Testing and Vaccination</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="index.js"></script>
+
+<body>
+  <nav>
+
+    <ul>
+            <!-- back to homepage -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Existing Appointments</a></li>
+            <li><a href="#">Past Results</a></li>
+    </ul>
+
+    <h1 class="left-notice">Welcome, Nick</h1>
+    <div class="progress">
+            <span class="dot-black"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+    </div>
+    </nav>
+
+   <div class="content">
+    <h2>Available Testing Dates</h2>
+    <div class="calender-container">
+    <div class="month">
+      <ul>
+      <li>February<br><span style="font-size:18px">2022</span></li>
+      <div class="label-group">
+        <div class="label">
+          <div class="label-color-available"></div>
+          <div class="label-text">Available</div>
+        </div>
+        <div class="label">
+          <div class="label-color-confirmed"></div>
+          <div class="label-text">Confirmed</div>
+        </div>
+      </div>
+
+        <li><span class="label"></span></li>
+      </ul>
+    </div>
+    
+    <ul class="weekdays">
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+      <li>Su</li>
+    </ul>
+    
+    <ul class="days">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li><span class="active" id="15" onclick="setColorDates(this.id)">15</span></li>
+      <li><span class="active" id="16" onclick="setColorDates(this.id)">16</span></li>
+      <li><span class="active" id="17" onclick="setColorDates(this.id)">17</span></li>
+      <li><span class="active" id="18" onclick="setColorDates(this.id)">18</span></li>
+      <li><span class="active" id="19" onclick="setColorDates(this.id)">19</span></li>
+      <li><span class="active" id="20" onclick="setColorDates(this.id)">20</span></li>
+      <li><span class="active" id="21" onclick="setColorDates(this.id)">21</span></li>
+      <li><span class="active" id="22" onclick="setColorDates(this.id)">22</span></li>
+      <li><span class="active" id="23" onclick="setColorDates(this.id)">23</span></li>
+      <li><span class="active" id="24" onclick="setColorDates(this.id)">24</span></li>
+      <li><span class="active" id="25" onclick="setColorDates(this.id)">25</span></li>
+      <li><span class="active" id="26" onclick="setColorDates(this.id)">26</span></li>
+      <li><span class="active" id="27" onclick="setColorDates(this.id)">27</span></li>
+      <li><span class="active" id="28" onclick="setColorDates(this.id)">28</span></li>
+    </ul>
+  </div>
+
+  <div id="next"><a href="time.html" class="button">Next <span>&#8594;</span></a></div>
+
+   </div>
+    
+</body>
+
+</html>
