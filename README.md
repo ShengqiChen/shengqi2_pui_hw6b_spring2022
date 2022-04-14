@@ -4,7 +4,6 @@ FILES
 
 index.js: 
     - the function setColorDate in the index.js file is called with the date as its argument. 
-        ex: <li><span class="active" id="15" onclick="setColorDates(this.id)">15</span></li>
     - The setColorDate function changes the color of the list item from dark green to light green and set
     all other list item back to dark green
     - uses "localstorage" to save the selected date as a variable in JSON format in index.js
